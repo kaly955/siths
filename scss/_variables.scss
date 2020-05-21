@@ -1,0 +1,26 @@
+$phone-max: 812px;
+$phone-min: 375px;
+$tablet-max: 1024px;
+$tablet-min: 813px;
+$laptop-max: 1440px;
+$laptop-min: 1025px;
+
+// Tablet = 1024 x 768
+// Phone = 375 x 812
+// Laptop = 1140 x 900
+
+@mixin phone{
+  @media (min-width: #{$phone-min}) and (max-width: #{$phone-max}) {
+    @content;
+  }
+}
+@mixin tablet{
+  @media (min-width: #{$tablet-min}) and (max-width: #{$tablet-max}) {
+    @content;
+  }
+}
+@mixin laptop{
+  @media (min-width: #{$laptop-min}) and (max-width: #{$laptop-max}) {
+    @content;
+  }
+}
