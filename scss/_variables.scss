@@ -1,3 +1,15 @@
+$colors: (
+  white: #ffffff,
+  black: #0b0c10,
+  main-color: #FFEF97,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+
+
 $phone-max: 812px;
 $phone-min: 375px;
 $tablet-max: 1024px;
@@ -24,3 +36,4 @@ $laptop-min: 1025px;
     @content;
   }
 }
+
