@@ -7,35 +7,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Arimo|Petit+Formal+Script|Quando|Ropa+Sans&display=swap" rel="stylesheet"> 
     <link rel="icon" href="css/img/Logo.png"/>
+    
     <title>SITHS</title>
 </head>
+<body onload="myFunction()">
+    <div id="loader">
+        <img src="css/img/logo.png" alt="">
+    </div>
 
-<body class= body>
-  <section class="top-bar"> 
-    <div class="black-bar"></div>
-    <img src= "css/img/logo.png" class= "logo"alt="">
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+      <h2>Tada!</h2>
+      <p>Some text in my newly loaded page..</p>
+    </div>
 
-    <section class="naviation-bar">
-    <input type="checkbox" class="check" id="checked">
-    <label class="menu-btn" for="checked">
-        <span class="bar top"></span>
-        <span class="bar middle"></span>
-        <span class="bar bottom"></span>
-    </label>
-    <label for="checked"></label>
-    <nav class="drawer-menu">
-        <ul>
-            <p class="navigation"><a href="#">Home</a></p>
-            <p class="navigation"><a href="#">Places To Go</a></p>
-            <p class="navigation"><a href="#">Visit Each Place</a></p>
-            <p class="navigation"><a href="#">Explore NY Secrets</a></p>
-        </ul>
-    </nav>
-    </section>
-    
-   </section>
-
-
-
+<script src="app.js"></script>
 </body>
 </html>
