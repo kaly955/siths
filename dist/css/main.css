@@ -7,6 +7,7 @@
   width: 100%;
   height: 4rem;
   position: fixed;
+  z-index: 9;
 }
 
 .logo {
@@ -14,6 +15,7 @@
   position: fixed;
   left: 1.5rem;
   top: 1rem;
+  z-index: 10;
 }
 
 .drawer-menu {
@@ -66,7 +68,7 @@
   display: block;
   width: 5rem;
   height: 5rem;
-  z-index: 3;
+  z-index: 10;
 }
 
 .bar {
@@ -125,11 +127,64 @@ ul {
           padding-inline-start: 0rem;
 }
 
-.pageOne {
-  height: 100vh;
+.partTwo {
+  height: 300vh;
 }
 
-.pageTwo {
-  height: 100vh;
+.pageTwoTitle {
+  color: #FFD700;
+  top: 4rem;
+  font-size: 2rem;
+  position: absolute;
+  text-align: end;
+  width: 100%;
+  margin-left: -1.2rem;
+}
+
+.news-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300vh;
+}
+
+.individual-news-image {
+  margin-bottom: -8rem;
+}
+
+.news-images {
+  width: 20rem;
+  height: 20rem;
+  border: .4rem solid black;
+  margin: 1rem;
+}
+
+.news-box {
+  -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0% 100%);
+  background-color: #ffef97;
+  position: relative;
+  top: -40%;
+  width: 20.9rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  left: 1rem;
+  height: 6rem;
+}
+
+.news-label {
+  top: 2.75rem;
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */
