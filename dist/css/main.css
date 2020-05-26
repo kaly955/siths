@@ -10,12 +10,25 @@
   z-index: 9;
 }
 
+@media (min-width: 813px) and (max-width: 1024px) {
+  .black-bar {
+    height: 7rem;
+  }
+}
+
 .logo {
   width: 25%;
   position: fixed;
   left: 1.5rem;
   top: 1rem;
   z-index: 10;
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .logo {
+    top: .5rem;
+    width: 15%;
+  }
 }
 
 .drawer-menu {
@@ -167,6 +180,43 @@ ul {
   height: 20rem;
   border: .4rem solid black;
   margin: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+}
+
+@-webkit-keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.news-images:hover, .news-images:focus, .news-images:active {
+  -webkit-animation-name: hvr-push;
+  animation-name: hvr-push;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 .news-box {
@@ -175,11 +225,11 @@ ul {
   background-color: #ffef97;
   position: relative;
   top: -40%;
-  width: 20.9rem;
+  width: 21rem;
   font-size: 1.5rem;
   font-style: italic;
   text-align: center;
-  left: 1rem;
+  left: .9rem;
   height: 6rem;
 }
 
