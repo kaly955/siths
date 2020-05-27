@@ -7,6 +7,7 @@
   width: 100%;
   height: 4rem;
   position: fixed;
+  z-index: 2;
 }
 
 .logo {
@@ -14,6 +15,7 @@
   position: fixed;
   left: 1.5rem;
   top: 1rem;
+  z-index: 3;
 }
 
 .drawer-menu {
@@ -221,5 +223,57 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+.title {
+  font-size: 5rem;
+  width: 50rem;
+  margin: auto;
+  position: relative;
+  top: -35rem;
+  color: white;
+  outline: black;
+}
+
+.intro {
+  margin: auto;
+}
+
+.school-img {
+  z-index: -1;
+  width: 100%;
+}
+
+.principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white;
+}
+
+.message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2rem;
+}
+
+.welcome {
+  width: 40rem;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=main.css.map */
