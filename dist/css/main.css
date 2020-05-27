@@ -11,7 +11,7 @@
 
 @media (min-width: 1441px) and (max-width: 2560px) {
   .black-bar {
-    height: 6rem;
+    height: 8rem;
   }
 }
 
@@ -24,7 +24,7 @@
 
 @media (min-width: 1441px) and (max-width: 2560px) {
   .logo {
-    width: 12rem;
+    width: 18rem;
   }
 }
 
@@ -37,7 +37,7 @@
   width: 100%;
   height: 100%;
   padding: 7.5rem 0;
-  background: #FFEF97;
+  background: color(main-color);
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: .5s;
@@ -66,6 +66,12 @@
   text-decoration: none;
 }
 
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .drawer-menu .navigation a {
+    font-size: 3.5rem;
+  }
+}
+
 .check {
   display: none;
 }
@@ -83,7 +89,7 @@
 
 @media (min-width: 1441px) and (max-width: 2560px) {
   .menu-btn {
-    top: 2.5rem;
+    top: 3.5rem;
   }
 }
 
@@ -149,5 +155,192 @@ ul {
 
 .pageTwo {
   height: 100vh;
+}
+
+html {
+  font-size: 62.5%;
+  padding: 0rem;
+  margin-top: 0rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .footer {
+    margin-bottom: -2rem;
+    margin-left: -1rem;
+  }
+}
+
+.contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+}
+
+.footer .col {
+  width: 25rem;
+  height: auto;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3rem 0 5rem 6rem;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .footer .col {
+    padding: 2rem 0rem 2rem 2rem;
+    width: 19rem;
+  }
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .footer .col {
+    padding: 2rem 0rem 4rem 5rem;
+    width: 23rem;
+  }
+}
+
+.footer .col h1 {
+  margin: 0;
+  margin-bottom: -1rem;
+  padding: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 7rem;
+  color: #f5dd53;
+  text-transform: uppercase;
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .footer .col h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .col ul li {
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 300;
+  padding: 1.2rem 0 0 0;
+  cursor: pointer;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .footer .col ul li {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .footer .col ul li {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
+.footer .col ul li:hover {
+  color: white;
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer .col ul p {
+  color: #f5dd53;
+  font-size: 1.5rem;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+  margin-bottom: -1rem;
+}
+
+.social-icons {
+  font-size: 3rem;
+  color: white;
+  padding-right: 1rem;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .social-icons {
+    padding-right: 0rem;
+    padding-left: 1rem;
+  }
+}
+
+.social-icons:hover {
+  color: #f5dd53;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .social {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .notondesktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .notonlaptop {
+    display: none;
+  }
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .notontablet {
+    display: none;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .notonphone {
+    display: none;
+  }
+}
+
+a:link, a:visited, a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

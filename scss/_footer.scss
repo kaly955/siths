@@ -1,0 +1,134 @@
+@import "_variables.scss";
+
+html {
+  font-size: 62.5%;
+  padding: 0rem;
+  margin-top: 0rem;
+  box-sizing: border-box;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: $black;
+  color: $white;
+  @include phone{
+    margin-bottom: -2rem;
+    margin-left: -1rem;
+  }
+}
+.contain{
+  display: flex;
+  justify-content: row;
+}
+.footer .col {
+  width: 25rem;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  padding: 3rem 0 5rem 6rem;
+  @include phone{
+    padding: 2rem 0rem 2rem 2rem;
+    width: 19rem;
+  }
+  @include tablet{
+    padding: 2rem 0rem 4rem 5rem;
+    width: 23rem;
+  }
+}
+.footer .col h1 {
+  margin: 0;
+  margin-bottom: -1rem;
+  padding: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 7rem;
+  color: $gold;
+  text-transform: uppercase;
+  @include tablet{
+    font-size: 2.5rem;
+  }
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: $white;
+  font-size: 2.5rem;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 300;
+  padding: 1.2rem 0 0 0;
+  cursor: pointer;
+  @include phone{
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  @include tablet{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+.footer .col ul li:hover {
+  color: $white;
+  transform: translateX(1rem);
+  transition: .3s;
+}
+.footer .col ul p {
+  color: $gold;
+  font-size: 1.5rem;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+  margin-bottom: -1rem;
+}
+.social-icons{
+  font-size: 3rem;
+  color: $white;
+  padding-right: 1rem;
+  @include phone{
+    padding-right: 0rem;
+    padding-left: 1rem;
+  }
+}
+.social-icons:hover {
+  color: $gold;
+  transition: .3s ease;
+}
+.social{
+  @include phone{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+.notondesktop{
+  @include desktop{
+    display: none;
+  }
+}
+.notonlaptop{
+  @include laptop{
+    display: none;
+  }
+}
+.notontablet{
+  @include tablet{
+    display: none;
+  }
+}
+.notonphone{
+  @include phone{
+    display: none;
+  }
+}
+a:link, a:visited, a:hover{
+  text-decoration: none;
+}
+a:active {
+  color: $white;
+}
