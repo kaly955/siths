@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Arimo|Petit+Formal+Script|Quando|Ropa+Sans&display=swap" rel="stylesheet"> 
     <link rel="icon" href="css/img/Logo.png"/>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
     <title>SITHS</title>
 </head>
 
-<body class= body>
+<body class="body">
   <section class="top-bar"> 
     <div class="black-bar"></div>
     <img src= "css/img/logo.png" class= "logo"alt="">
@@ -39,44 +43,80 @@
     <h1 class= "pageTwoTitle">News</h1>
     <div class="news-container">
         <div class= "individual-news-image"> 
-        <img src= "css/img/sports.jpg" class= "news-images" alt="">
-            <div class= "news-box">
-                <h1 class= "news-label"> COVID-19 Updates </h1>
-            </div>
+            <img src= "css/img/covid-updates.png" class= "news-images" alt="">
+                <div class= "news-box">
+                    <h1 class= "news-label"> COVID-19 Updates </h1>
+                </div>
         </div>
         <div class= "individual-news-image"> 
-        <img src= "css/img/sports.jpg" class= "news-images" alt="">
-            <div class= "news-box">
-                <h1 class= "news-label"> Social Distance Learning </h1>
-            </div>
+            <img src= "css/img/seniors.png" class= "news-images" alt="">
+                <div class= "news-box">
+                    <h1 class= "news-label"> Seniors </h1>
+                </div>
         </div>
         <div class= "individual-news-image"> 
-        <img src= "css/img/sports.jpg" class= "news-images" alt="">
-            <div class= "news-box">
-                <h1 class= "news-label"> Class of 2020 </h1>
-            </div>
+            <img src= "css/img/remote-learning.png" class= "news-images" alt="">
+                <div class= "news-box">
+                    <h1 class= "news-label"> Remote Learning </h1>
+                </div>
         </div>
         <div class= "individual-news-image"> 
-        <img src= "css/img/sports.jpg" class= "news-images" alt="">
-            <div class= "news-box">
-                <h1 class= "news-label"> Sports </h1>
-            </div>
+            <img src= "css/img/community.png" class= "news-images" alt="">
+                <div class= "news-box">
+                    <h1 class= "news-label"> Community </h1>
+                </div>
         </div>
         <div class= "individual-news-image"> 
-        <img src= "css/img/sports.jpg" class= "news-images" alt="">
-            <div class= "news-box">
-                <h1 class= "news-label"> NHS </h1>
-            </div>
+            <img src= "css/img/sports.jpg" class= "news-images" alt="">
+                <div class= "news-box">
+                    <h1 class= "news-label"> Sports </h1>
+                </div>
         </div>
         <div class= "individual-news-image"> 
-        <img src= "css/img/sports.jpg" class= "news-images" alt="">
-            <div class= "news-box">
-                <h1 class= "news-label"> Social Medias </h1>
-            </div>
+            <img src= "css/img/social-media.png" class= "news-images" alt="">
+                <div class= "news-box">
+                    <h1 class= "news-label"> Official Social Media </h1>
+                </div>
         </div>
-        
     </div>
     </section>
 
+    <section class="pageThree">
+        <h1 class= "pageThreeTitle">Teacher of the Month</h1>
+        <div class="container">
+            <div class="slides">
+                <div class="slide">
+                    <img src="css/img/whalen-1.jpg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="css/img/whalen-2.png" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="css/img/whalen-3.png" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="css/img/whalen-4.jpeg" alt="" />
+                </div>
+            </div>
+            <div class="slide-controls">
+                <button id="prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    <div class= "teacher-line-open"></div>
+    <div class="teacher-button">
+        <button type="button" class="collapsible">Michael Jean Whalen</button>
+        <div class="content">
+            <p>Bald Computer Teacher</p>
+        </div>
+    </div>
+    <div class= "teacher-line-closed"></div>
+    </section>
+
+    <script src="main.js"></script>
 </body>
 </html>

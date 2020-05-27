@@ -20,17 +20,26 @@
   justify-content: center;
   align-items: center;
   height: 300vh;
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 200vh;
+    justify-content: space-evenly;
+  }
 }
 
 .individual-news-image {
-    margin-bottom: -8rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 20rem;
+    height: 20rem;
+    border: .4rem solid black;
 }
+
 
 .news-images {
   width: 20rem;
   height: 20rem;
-  border: .4rem solid black;
-  margin: 1rem;  
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -64,12 +73,11 @@
     clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0% 100%);
     background-color: rgba(color(main-color), 1);
     position: relative;
-    top: -40%;
-    width: 21rem;
+    top: -50%;
+    width: 20rem;
     font-size: 1.5rem;
     font-style: italic;
     text-align: center;
-    left: .9rem;
     height: 6rem;
 }
 
