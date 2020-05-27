@@ -1,54 +1,7 @@
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-          overflow-x: hidden;
+.body {
+  margin: 0rem;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: 	#D4AF37;
-}
-
-
-.loader {
-  margin-top: 15rem;
-  animation: spin 2s linear infinite;
-  
-}
-
-@keyframes spin {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
- }
-#loader {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  animation: spin 2s linear infinite;
-  margin-top: 15rem;
-
-}
-
-#myDiv {
-  display: none;
-  text-align: center;
-  animation: fadeInAnimation ease 3s ;
-  animation-iteration-count: 1; 
-  animation-fill-mode: forwards; 
-
-} 
-
-@keyframes fadeInAnimation { 
-  0% { 
-      opacity: 0; 
-  } 
-  100% { 
-      opacity: 1; 
-   } 
-} 
-/*vicky */
 .black-bar {
   background-color: black;
   width: 100%;
@@ -56,11 +9,23 @@ body {
   position: fixed;
 }
 
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .black-bar {
+    height: 6rem;
+  }
+}
+
 .logo {
   width: 25%;
   position: fixed;
   left: 1.5rem;
   top: 1rem;
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .logo {
+    width: 12rem;
+  }
 }
 
 .drawer-menu {
@@ -114,6 +79,12 @@ body {
   width: 5rem;
   height: 5rem;
   z-index: 3;
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .menu-btn {
+    top: 2.5rem;
+  }
 }
 
 .bar {
@@ -179,3 +150,4 @@ ul {
 .pageTwo {
   height: 100vh;
 }
+/*# sourceMappingURL=main.css.map */
