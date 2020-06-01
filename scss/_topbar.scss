@@ -11,7 +11,7 @@
     position: fixed;
     z-index: 9;
     @include tablet {
-        height: 7rem;
+        height: 10rem;
     }
     // @include desktop {
     //     height: 4rem;
@@ -23,10 +23,10 @@
     left: 1.5rem;
     top: 1rem;
     z-index: 10;
-    @include tablet {
-    top: .5rem;
-    width: 15%;
-    }
+    // @include tablet {
+    // top: .5rem;
+    // width: 15%;
+    // }
 }
 
 .drawer-menu {

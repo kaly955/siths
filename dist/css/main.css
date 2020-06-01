@@ -12,7 +12,7 @@
 
 @media (min-width: 813px) and (max-width: 1024px) {
   .black-bar {
-    height: 7rem;
+    height: 10rem;
   }
 }
 
@@ -22,13 +22,6 @@
   left: 1.5rem;
   top: 1rem;
   z-index: 10;
-}
-
-@media (min-width: 813px) and (max-width: 1024px) {
-  .logo {
-    top: .5rem;
-    width: 15%;
-  }
 }
 
 .drawer-menu {
@@ -342,10 +335,17 @@ ul {
   cursor: pointer;
   padding: 1rem;
   width: 100%;
-  text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+}
+
+.teacher-description-box {
+  font-size: 1.5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 .active,
@@ -373,5 +373,21 @@ ul {
   position: relative;
   width: 20rem;
   margin: auto;
+}
+
+.more-info-box {
+  width: 20rem;
+  margin: auto;
+  top: 15%;
+  position: relative;
+  text-align: left;
+  font-size: .9rem;
+  margin-left: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.teacher-link:hover {
+  color: #FFD700;
 }
 /*# sourceMappingURL=main.css.map */
