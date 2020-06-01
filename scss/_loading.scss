@@ -12,6 +12,9 @@ html {
   }
   
   
+#myDiv{
+  display: none;
+}
   .loader {
     margin-top: 15rem;
     animation: spin 2s linear infinite;
