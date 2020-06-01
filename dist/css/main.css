@@ -839,7 +839,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #D4AF37;
+  background-color: #FFFFFF;
 }
 
 .loader {
@@ -918,5 +918,82 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+.gallery-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .gallery-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .gallery-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .gallery-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  -webkit-transition: -webkit-box-flex 0.8s ease;
+  transition: -webkit-box-flex 0.8s ease;
+  transition: flex 0.8s ease;
+  transition: flex 0.8s ease, -webkit-box-flex 0.8s ease, -ms-flex 0.8s ease;
+}
+
+.item:hover {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+  cursor: pointer;
+}
+
+.item-1 {
+  background-image: url("img/whalen-1.jpg");
+}
+
+.item-2 {
+  background-image: url("img/whalen-2.png");
+}
+
+.item-3 {
+  background-image: url("img/whalen-3.png");
+}
+
+.item-4 {
+  background-image: url("img/whalen-4.jpeg");
 }
 /*# sourceMappingURL=main.css.map */
