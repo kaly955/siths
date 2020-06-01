@@ -157,97 +157,241 @@ ul {
   height: 100vh;
 }
 
-html {
-<<<<<<< HEAD
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  overflow-x: hidden;
+.pageTwoTitle {
+  color: color(dark-main-color);
+  top: 4rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  position: absolute;
+  text-align: end;
+  width: 100%;
+  margin-left: -1.2rem;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #D4AF37;
-}
-
-.loader {
-  margin-top: 15rem;
-  -webkit-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+@media (min-width: 813px) and (max-width: 1024px) {
+  .pageTwoTitle {
+    margin-left: -2.5rem;
+    top: 2.5rem;
+    font-size: 3rem;
   }
 }
 
-@keyframes spin {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .pageTwoTitle {
+    text-align: end;
+    margin-left: -11rem;
+    top: 6rem;
+    font-size: 2.5rem;
   }
 }
 
-#loader {
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .pageTwoTitle {
+    text-align: end;
+    margin-left: -24.5rem;
+    top: 2.5rem;
+    font-size: 4rem;
+  }
+}
+
+.news-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: auto;
-  -webkit-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
-  margin-top: 15rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300vh;
 }
 
-#myDiv {
-  display: none;
-  text-align: center;
-  -webkit-animation: fadeInAnimation ease 3s;
-          animation: fadeInAnimation ease 3s;
+@media (min-width: 813px) and (max-width: 1024px) {
+  .news-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 85vh;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-top: 8rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .news-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 85vh;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-left: 8%;
+    padding-top: 10rem;
+    width: 75rem;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .news-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 85vh;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-left: 15%;
+    padding-top: 10rem;
+    width: 105rem;
+  }
+}
+
+.individual-news-image {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 20rem;
+  height: 20rem;
+  border: 0.4rem solid black;
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .individual-news-image {
+    width: 17rem;
+    height: 17rem;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .individual-news-image {
+    width: 30rem;
+    height: 30rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.news-images {
+  width: 20rem;
+  height: 20rem;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .news-images {
+    width: 17rem;
+    height: 17rem;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .news-images {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
+@-webkit-keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.news-images:hover,
+.news-images:focus,
+.news-images:active {
+  -webkit-animation-name: hvr-push;
+  animation-name: hvr-push;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }
 
-@-webkit-keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+.news-box {
+  -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0% 100%);
+  background-color: #FFEF97;
+  position: relative;
+  top: -45%;
+  width: 20rem;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  height: 6rem;
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .news-box {
+    width: 17rem;
   }
 }
 
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .news-box {
+    width: 30rem;
+    font-size: 1.5rem;
+    height: 8rem;
   }
 }
-=======
+
+.news-label {
+  top: 3.25rem;
+  position: relative;
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .news-label {
+    top: 3.2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .news-label {
+    top: 4rem;
+  }
+}
+
+html {
   font-size: 62.5%;
   padding: 0rem;
   margin-top: 0rem;
@@ -433,5 +577,4 @@ a:link, a:visited, a:hover {
 a:active {
   color: white;
 }
->>>>>>> 70f99d5e8a74e670a44e45f3fbda392385d5744b
 /*# sourceMappingURL=main.css.map */
