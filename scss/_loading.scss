@@ -1,4 +1,5 @@
 @import "_variables.scss";
+
 html {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -8,13 +9,10 @@ html {
   body {
     margin: 0;
     padding: 0;
-    background-color: 	#D4AF37;
+    background-color: 	#FFFFFF;
   }
   
-  
-#myDiv{
-  display: none;
-}
+
   .loader {
     margin-top: 15rem;
     animation: spin 2s linear infinite;

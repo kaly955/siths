@@ -1,5 +1,9 @@
 @import "_variables.scss";
 
+
+.pageTwo{
+  z-index: -1;
+}
 .pageTwoTitle {
   color: color(dark-main-color);
   top: 4rem;
