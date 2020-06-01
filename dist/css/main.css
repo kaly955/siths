@@ -51,7 +51,7 @@
   width: 100%;
   height: 100%;
   padding: 7.5rem 0;
-  background: color(main-color);
+  background: #FFEF97;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: .5s;
@@ -182,7 +182,7 @@ ul {
 }
 
 .pageTwoTitle {
-  color: color(dark-main-color);
+  color: #FFD700;
   top: 4rem;
   font-family: "Red Hat Display", sans-serif;
   font-weight: 500;
@@ -264,9 +264,9 @@ ul {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    margin-left: 8%;
+    margin: 0 auto;
     padding-top: 10rem;
-    width: 75rem;
+    width: 120rem;
   }
 }
 
@@ -282,9 +282,9 @@ ul {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    margin-left: 15%;
+    margin: 0 auto;
     padding-top: 10rem;
-    width: 105rem;
+    width: 168rem;
   }
 }
 
@@ -293,7 +293,7 @@ ul {
   margin-top: 1rem;
   width: 20rem;
   height: 20rem;
-  border: 0.4rem solid black;
+  border: .7rem solid black;
 }
 
 @media (min-width: 813px) and (max-width: 1024px) {
@@ -303,10 +303,18 @@ ul {
   }
 }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .individual-news-image {
+    width: 35rem;
+    height: 35rem;
+    margin-bottom: 2rem;
+  }
+}
+
 @media (min-width: 1441px) and (max-width: 2560px) {
   .individual-news-image {
-    width: 30rem;
-    height: 30rem;
+    width: 50rem;
+    height: 50rem;
     margin-bottom: 2rem;
   }
 }
@@ -327,32 +335,39 @@ ul {
   }
 }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .news-images {
+    width: 35rem;
+    height: 35rem;
+  }
+}
+
 @media (min-width: 1441px) and (max-width: 2560px) {
   .news-images {
-    width: 30rem;
-    height: 30rem;
+    width: 50rem;
+    height: 50rem;
   }
 }
 
 @-webkit-keyframes hvr-push {
   50% {
     -webkit-transform: scale(0.8);
-    transform: scale(0.8);
+            transform: scale(0.8);
   }
   100% {
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes hvr-push {
   50% {
     -webkit-transform: scale(0.8);
-    transform: scale(0.8);
+            transform: scale(0.8);
   }
   100% {
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -360,13 +375,26 @@ ul {
 .news-images:focus,
 .news-images:active {
   -webkit-animation-name: hvr-push;
-  animation-name: hvr-push;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+          animation-name: hvr-push;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
   -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
+          animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.individual-news-image:hover,
+.individual-news-image:focus,
+.individual-news-image:active {
+  -webkit-animation-name: hvr-push;
+          animation-name: hvr-push;
+  -webkit-animation-duration: 0.28s;
+          animation-duration: 0.28s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 .news-box {
@@ -389,11 +417,21 @@ ul {
   }
 }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .news-box {
+    top: -40%;
+    width: 35rem;
+    font-size: 2.9rem;
+    height: 7.5rem;
+  }
+}
+
 @media (min-width: 1441px) and (max-width: 2560px) {
   .news-box {
-    width: 30rem;
-    font-size: 1.5rem;
-    height: 8rem;
+    top: -35%;
+    width: 50rem;
+    font-size: 3.5rem;
+    height: 9rem;
   }
 }
 
@@ -439,7 +477,7 @@ ul {
 }
 
 .pageThreeTitle {
-  color: color(dark-main-color);
+  color: #FFD700;
   font-family: "Red Hat Display", sans-serif;
   font-weight: 500;
   font-size: 2rem;
@@ -580,7 +618,7 @@ ul {
 
 .active,
 .collapsible:hover {
-  background-color: color(main-color);
+  background-color: #FFEF97;
 }
 
 .content {
@@ -642,7 +680,7 @@ ul {
 }
 
 .teacher-link:hover {
-  color: color(dark-main-color);
+  color: #FFD700;
 }
 
 html {
@@ -713,6 +751,7 @@ html {
   margin: 0;
   margin-bottom: -1rem;
   padding: 0;
+  text-align: left;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 500;
   font-size: 3rem;
@@ -731,6 +770,7 @@ html {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-align: left;
 }
 
 .footer .col ul li {
