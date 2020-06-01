@@ -9,13 +9,14 @@ $colors: (
   @return map-get($colors, $color-name);
 }
 
-
 $phone-max: 812px;
 $phone-min: 375px;
 $tablet-max: 1024px;
 $tablet-min: 813px;
 $laptop-max: 1440px;
 $laptop-min: 1025px;
+$desktop-max: 2560px;
+$desktop-min: 1441px;
 
 // Tablet = 1024 x 768
 // Phone = 375 x 812
@@ -36,4 +37,10 @@ $laptop-min: 1025px;
     @content;
   }
 }
+@mixin desktop{
+  @media (min-width: #{$desktop-min}) and (max-width: #{$desktop-max}) {
+    @content;
+  }
+}
+
 
