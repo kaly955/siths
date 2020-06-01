@@ -9,12 +9,18 @@
     width: 100%;
     height: 4rem;
     position: fixed;
+    @include desktop{
+        height: 8rem;
+    }
 }
 .logo{
     width: 25%;
     position: fixed;
     left: 1.5rem;
     top: 1rem;
+    @include desktop{
+        width: 18rem;
+    }
 }
 
 .drawer-menu {
@@ -52,9 +58,9 @@
     //    @include laptop {
     //      font-size: 2.3rem;
     //    }
-    //    @include desktop {
-    //      font-size: 2rem;
-    //  }
+       @include desktop {
+         font-size: 3.5rem;
+     }
 }
 
 .check {
@@ -70,6 +76,9 @@
     width: 5rem;
     height: 5rem;
     z-index: 3;
+    @include desktop{
+        top: 3.5rem;
+    }
 }
 
 .bar {
