@@ -16,13 +16,27 @@
 
 .pageThreeTitle {
   color: color(dark-main-color);
-  font-size: 1.5rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
   position: absolute;
   text-align: end;
   width: 100%;
-  margin-left: -3rem;
+  margin-left: -1.25rem;
   @include tablet {
     font-size: 3rem;
+    text-align: start;
+    margin-left: 4rem;
+  }
+  @include laptop {
+    text-align: end;
+    margin-left: -11rem;
+    font-size: 2.5rem;
+  }
+  @include desktop {
+    text-align: end;
+    margin-left: -24.5rem;
+    font-size: 4rem;
   }
 }
 

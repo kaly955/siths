@@ -1,9 +1,10 @@
 @import "_variables.scss";
 
-
 .pageTwoTitle {
   color: color(dark-main-color);
   top: 4rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
   font-size: 2rem;
   position: absolute;
   text-align: end;
@@ -11,13 +12,20 @@
   margin-left: -1.2rem;
   @include tablet {
     margin-left: -2.5rem;
+    top: 2.5rem;
     font-size: 3rem;
-    top: 3rem;
   }
   @include laptop {
-    margin-left: -4.5rem;
+    text-align: end;
+    margin-left: -11rem;
     top: 6rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+  @include desktop {
+    text-align: end;
+    margin-left: -24.5rem;
+    top: 2.5rem;
+    font-size: 4rem;
   }
 }
 
@@ -39,22 +47,37 @@
     flex-wrap: wrap;
     height: 85vh;
     justify-content: space-evenly;
+    margin-left: 8%;
     padding-top: 10rem;
+    width: 75rem;
+  }
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 85vh;
+    justify-content: space-evenly;
+    margin-left: 15%;
+    padding-top: 10rem;
+    width: 105rem;
   }
 }
 
 .individual-news-image {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    width: 20rem;
-    height: 20rem;
-    border: .4rem solid black;
-    @include tablet {
-      width: 17rem;
-      height: 17rem;
-    }
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 20rem;
+  height: 20rem;
+  border: 0.4rem solid black;
+  @include tablet {
+    width: 17rem;
+    height: 17rem;
+  }
+  @include desktop {
+    width: 30rem;
+    height: 30rem;
+    margin-bottom: 2rem;
+  }
 }
-
 
 .news-images {
   width: 20rem;
@@ -67,8 +90,11 @@
     width: 17rem;
     height: 17rem;
   }
+  @include desktop {
+    width: 30rem;
+    height: 30rem;
+  }
 }
-
 
 @keyframes hvr-push {
   50% {
@@ -80,7 +106,9 @@
     transform: scale(1);
   }
 }
-.news-images:hover, .news-images:focus, .news-images:active {
+.news-images:hover,
+.news-images:focus,
+.news-images:active {
   -webkit-animation-name: hvr-push;
   animation-name: hvr-push;
   -webkit-animation-duration: 0.5s;
@@ -91,27 +119,35 @@
   animation-iteration-count: 1;
 }
 
-
 .news-box {
-    clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0% 100%);
-    background-color: rgba(color(main-color), 1);
-    position: relative;
-    top: -50%;
-    width: 20rem;
+  clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0% 100%);
+  background-color: rgba(color(main-color), 1);
+  position: relative;
+  top: -45%;
+  width: 20rem;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  height: 6rem;
+  @include tablet {
+    width: 17rem;
+  }
+  @include desktop {
+    width: 30rem;
     font-size: 1.5rem;
-    font-style: italic;
-    text-align: center;
-    height: 6rem;
-    @include tablet {
-      width: 17rem;
-    }
+    height: 8rem;
+  }
 }
 
 .news-label {
-    top: 2.75rem;
-    position: relative;
-    @include tablet {
-      top: 3.2rem;
-      font-size: 1.5rem;
-    }
+  top: 3.25rem;
+  position: relative;
+  @include tablet {
+    top: 3.2rem;
+    font-size: 1.5rem;
+  }
+  @include desktop {
+    top: 4rem;
+  }
 }
