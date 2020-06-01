@@ -177,10 +177,6 @@ ul {
           padding-inline-start: 0rem;
 }
 
-.partTwo {
-  height: 300vh;
-}
-
 .pageTwoTitle {
   color: #FFD700;
   top: 4rem;
@@ -189,6 +185,22 @@ ul {
   text-align: end;
   width: 100%;
   margin-left: -1.2rem;
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .pageTwoTitle {
+    margin-left: -2.5rem;
+    font-size: 3rem;
+    top: 3rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .pageTwoTitle {
+    margin-left: -4.5rem;
+    top: 6rem;
+    font-size: 3rem;
+  }
 }
 
 .news-container {
@@ -216,10 +228,27 @@ ul {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: 200vh;
+    height: 85vh;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    padding-top: 8rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .news-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 85vh;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-top: 10rem;
   }
 }
 
@@ -231,6 +260,13 @@ ul {
   border: .4rem solid black;
 }
 
+@media (min-width: 813px) and (max-width: 1024px) {
+  .individual-news-image {
+    width: 17rem;
+    height: 17rem;
+  }
+}
+
 .news-images {
   width: 20rem;
   height: 20rem;
@@ -238,6 +274,13 @@ ul {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .news-images {
+    width: 17rem;
+    height: 17rem;
+  }
 }
 
 @-webkit-keyframes hvr-push {
@@ -286,14 +329,45 @@ ul {
   height: 6rem;
 }
 
+@media (min-width: 813px) and (max-width: 1024px) {
+  .news-box {
+    width: 17rem;
+  }
+}
+
 .news-label {
   top: 2.75rem;
   position: relative;
 }
 
+@media (min-width: 813px) and (max-width: 1024px) {
+  .news-label {
+    top: 3.2rem;
+    font-size: 1.5rem;
+  }
+}
+
 .pageThree {
   height: 100vh;
   margin-top: -8rem;
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .pageThree {
+    margin-top: 0rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .pageThree {
+    margin-top: 0rem;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .pageThree {
+    margin-top: 0rem;
+  }
 }
 
 .pageThreeTitle {
@@ -302,7 +376,13 @@ ul {
   position: absolute;
   text-align: end;
   width: 100%;
-  margin-left: -1.2rem;
+  margin-left: -3rem;
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .pageThreeTitle {
+    font-size: 3rem;
+  }
 }
 
 .container {
@@ -313,6 +393,15 @@ ul {
   overflow: hidden;
   top: 10%;
   border: 0.4rem solid black;
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .container {
+    width: 30rem;
+    height: 25rem;
+    margin-left: 4rem;
+    top: 15%;
+  }
 }
 
 .slides {
@@ -374,6 +463,15 @@ ul {
   margin: auto;
 }
 
+@media (min-width: 813px) and (max-width: 1024px) {
+  .teacher-button {
+    top: -32%;
+    margin-right: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
 .collapsible {
   color: black;
   cursor: pointer;
@@ -411,12 +509,28 @@ ul {
   margin: auto;
 }
 
+@media (min-width: 813px) and (max-width: 1024px) {
+  .teacher-line-open {
+    top: -35%;
+    width: 20rem;
+    margin-right: 4rem;
+  }
+}
+
 .teacher-line-closed {
   border-top: .2rem solid #FFEF97;
   top: 14%;
   position: relative;
   width: 20rem;
   margin: auto;
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .teacher-line-closed {
+    top: -29%;
+    width: 20rem;
+    margin-right: 4rem;
+  }
 }
 
 .more-info-box {
@@ -429,6 +543,14 @@ ul {
   margin-left: 2rem;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .more-info-box {
+    top: -29%;
+    font-size: 1rem;
+    margin-left: 40rem;
+  }
 }
 
 .teacher-link:hover {
