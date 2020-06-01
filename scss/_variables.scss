@@ -3,17 +3,6 @@ $black: black;
 $gold: rgb(245, 221, 83);
 $main-color: #FFEF97;
 
-$colors: (
-  white: #ffffff,
-  black: #0b0c10,
-  main-color: #FFEF97,
-  dark-main-color: #FFD700,
-);
-
-@function color($color-name) {
-  @return map-get($colors, $color-name);
-}
-
 $phone-max: 812px;
 $phone-min: 375px;
 $tablet-max: 1024px;
