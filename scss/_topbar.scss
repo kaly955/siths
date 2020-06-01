@@ -10,12 +10,9 @@
     height: 4rem;
     position: fixed;
     z-index: 9;
-    @include tablet {
-        height: 10rem;
+    @include laptop {
+        height: 6rem;
     }
-    // @include desktop {
-    //     height: 4rem;
-    // }
 }
 .logo{
     width: 25%;
@@ -23,10 +20,15 @@
     left: 1.5rem;
     top: 1rem;
     z-index: 10;
-    // @include tablet {
-    // top: .5rem;
-    // width: 15%;
-    // }
+    @include laptop {
+        width: 12%;
+    }
+    @include tablet {
+        width: 9%;
+    }
+    @include desktop {
+        width: 11%;
+        }
 }
 
 .drawer-menu {
@@ -82,6 +84,11 @@
     width: 5rem;
     height: 5rem;
     z-index: 10;
+    @include laptop {
+        right: 1;
+        top: 1.8rem;
+    }
+    
 }
 
 .bar {
@@ -94,16 +101,26 @@
     background: white;
     transition: all .5s;
     transform-origin: left top;
+    @include laptop {
+        width: 3rem;
+        height: 8px;
+    }
 }
 
 .bar.middle {
     top: .6rem;
     opacity: 1;
+    @include laptop {
+        top: 1rem;
+    }
 }
 
 .bar.bottom {
     top: 1.25rem;
     transform-origin: left bottom;
+    @include laptop {
+        top: 2rem;
+    }
 }
 
 .check:checked ~ .drawer-menu {

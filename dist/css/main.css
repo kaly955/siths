@@ -10,9 +10,9 @@
   z-index: 9;
 }
 
-@media (min-width: 813px) and (max-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
   .black-bar {
-    height: 10rem;
+    height: 6rem;
   }
 }
 
@@ -22,6 +22,24 @@
   left: 1.5rem;
   top: 1rem;
   z-index: 10;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .logo {
+    width: 12%;
+  }
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .logo {
+    width: 9%;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .logo {
+    width: 11%;
+  }
 }
 
 .drawer-menu {
@@ -77,6 +95,13 @@
   z-index: 10;
 }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .menu-btn {
+    right: 1;
+    top: 1.8rem;
+  }
+}
+
 .bar {
   position: absolute;
   top: 0;
@@ -91,15 +116,34 @@
           transform-origin: left top;
 }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .bar {
+    width: 3rem;
+    height: 8px;
+  }
+}
+
 .bar.middle {
   top: .6rem;
   opacity: 1;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .bar.middle {
+    top: 1rem;
+  }
 }
 
 .bar.bottom {
   top: 1.25rem;
   -webkit-transform-origin: left bottom;
           transform-origin: left bottom;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .bar.bottom {
+    top: 2rem;
+  }
 }
 
 .check:checked ~ .drawer-menu {
