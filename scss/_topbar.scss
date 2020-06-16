@@ -15,7 +15,7 @@
     }
 }
 .logo{
-    width: 25%;
+    width: 17%;
     position: fixed;
     left: 1.5rem;
     top: 1rem;
@@ -24,10 +24,12 @@
         width: 12%;
     }
     @include tablet {
-        width: 9%;
+        width: 7%;
+        top: .5rem;
     }
     @include desktop {
-        width: 11%;
+        width: 8%;
+        top: .5rem;
         }
 }
 
