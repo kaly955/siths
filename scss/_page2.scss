@@ -37,13 +37,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 300vh;
+  height: 220vh;
   @include tablet {
     flex-direction: row;
     flex-wrap: wrap;
-    height: 85vh;
+    height: 45vh;
     justify-content: space-evenly;
-    padding-top: 8rem;
   }
   @include laptop {
     flex-direction: row;
@@ -68,12 +67,12 @@
 .individual-news-image {
   margin-bottom: 1rem;
   margin-top: 1rem;
-  width: 20rem;
-  height: 20rem;
+  width: 25rem;
+  height: 25rem;
   border: .7rem solid black;
   @include tablet {
-    width: 17rem;
-    height: 17rem;
+    width: 15rem;
+    height: 15rem;
   }
   @include laptop {
     width: 35rem;
@@ -88,15 +87,15 @@
 }
 
 .news-images {
-  width: 20rem;
-  height: 20rem;
+  width: 25rem;
+  height: 25rem;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   @include tablet {
-    width: 17rem;
-    height: 17rem;
+    width: 15rem;
+    height: 15rem;
   }
   @include laptop {
     width: 35rem;
@@ -137,15 +136,15 @@
   clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0% 100%);
   background-color: #FFEF97;
   position: relative;
-  top: -45%;
-  width: 20rem;
+  top: -65%;
+  width: 25rem;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 400;
   font-size: 1rem;
   text-align: center;
   height: 6rem;
   @include tablet {
-    width: 17rem;
+    width: 15rem;
   }
   @include laptop {
     top: -40%;

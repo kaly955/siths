@@ -215,7 +215,7 @@ ul {
 
 .school-img {
   z-index: -1;
-  width: 120%;
+  width: 100%;
 }
 
 .principal {
@@ -372,7 +372,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 300vh;
+  height: 220vh;
 }
 
 @media (min-width: 813px) and (max-width: 1024px) {
@@ -383,11 +383,10 @@ ul {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: 85vh;
+    height: 45vh;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    padding-top: 8rem;
   }
 }
 
@@ -430,15 +429,15 @@ ul {
 .individual-news-image {
   margin-bottom: 1rem;
   margin-top: 1rem;
-  width: 20rem;
-  height: 20rem;
+  width: 25rem;
+  height: 25rem;
   border: .7rem solid black;
 }
 
 @media (min-width: 813px) and (max-width: 1024px) {
   .individual-news-image {
-    width: 17rem;
-    height: 17rem;
+    width: 15rem;
+    height: 15rem;
   }
 }
 
@@ -459,8 +458,8 @@ ul {
 }
 
 .news-images {
-  width: 20rem;
-  height: 20rem;
+  width: 25rem;
+  height: 25rem;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -469,8 +468,8 @@ ul {
 
 @media (min-width: 813px) and (max-width: 1024px) {
   .news-images {
-    width: 17rem;
-    height: 17rem;
+    width: 15rem;
+    height: 15rem;
   }
 }
 
@@ -541,8 +540,8 @@ ul {
           clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0% 100%);
   background-color: #FFEF97;
   position: relative;
-  top: -45%;
-  width: 20rem;
+  top: -65%;
+  width: 25rem;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -552,7 +551,7 @@ ul {
 
 @media (min-width: 813px) and (max-width: 1024px) {
   .news-box {
-    width: 17rem;
+    width: 15rem;
   }
 }
 
