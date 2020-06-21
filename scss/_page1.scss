@@ -1,97 +1,129 @@
 @import "_variables.scss";
 
-.title{
+.title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 5rem;
+  width: 50rem;
+  margin: auto;
+  position: relative;
+  top: -100rem;
+  color: white;
+  @include phone {
+    font-size: 2.8rem;
+    top: -39rem;
+    width: 30rem;
+  }
+  @include tablet {
     font-size: 5rem;
     width: 50rem;
-    margin: auto;
-    position: relative;
-    top: -100rem;
-    color: white;
-    @include phone{
-        font-size: 2.8rem;
-    top: -20rem;
-    width: 30rem;
-    }
-    @include tablet{
-        font-size: 5rem;
-    width: 50rem;
     top: -80rem;
-    }
   }
-.intro{
-    display: flex;
-    margin: auto;
-    flex-direction: column;
+  @include laptop {
+    top: -50rem;
+  }
+  @include desktop {
+    font-size: 8rem;
+    width: 87rem;
+    top: -63rem;
+  }
 }
-.school-img{
+.intro {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  @include desktop {
+    height: 105vh;
+  }
+}
+.school-img {
   z-index: -1;
-    width: 100%;
+  width: 100%;
+  @include desktop {
+    height: 100vh;
+  }
 }
-.principal{
+.principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  @include tablet {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: white;
-    @include tablet{
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    @include phone{
-        display: flex;
-        flex-direction: column-reverse;
-    }
+    flex-direction: row-reverse;
+  }
+  @include phone {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
-.message{
+.message {
+  display: flex;
+  flex-direction: column;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  @include phone {
+    margin: auto;
+    width: 30rem;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+  }
+  @include tablet {
     display: flex;
     flex-direction: column;
     font-size: 3rem;
-    @include phone{
-        margin:auto;
-        width: 30rem;
-        margin-bottom: 2rem;
-        margin-top: 0rem;
-    }
-    @include tablet{
-        display: flex;
-        flex-direction: column;
-        font-size: 3rem;
-    }
+  }
 }
 
 .message-title {
-    margin: 1rem;
-    @include tablet {
-        font-size: 4rem;
-    }
-    @include laptop {
-        margin-bottom: 3rem;
-        font-size: 5rem;
-    }
+  margin: 1rem;
+  @include tablet {
+    font-size: 4rem;
+  }
+  @include laptop {
+    margin-top: 6rem;
+    font-size: 5rem;
+  }
+  @include desktop {
+    margin-top: 6rem;
+    font-size: 5rem;
+  }
 }
-.welcome{
+.welcome {
+  width: 50rem;
+  font-size: 1.5rem;
+  @include phone {
+    margin: auto;
+    width: 30rem;
+  }
+  @include tablet {
     width: 50rem;
-    font-size: 1.5rem;
-    @include phone{
-        margin:auto;
-        width: 30rem;
-    }
-    @include tablet{
-        width: 50rem;
-        font-size: 2rem;
-    }
-    @include laptop {
-        font-size: 3rem;
-    }
+    font-size: 2rem;
+  }
+  @include laptop {
+    font-size: 2.4rem;
+    padding-left: 3rem;
+  }
+  @include desktop {
+    font-size: 2.7rem;
+    padding-left: 3rem;
+  }
 }
-.pimage{
-    border: medium;
-    margin: 2rem;
-    @include phone{
-        width: 30rem;
-        margin: auto;
-    }
-    @include laptop {
-        height: 70vh;
-    }
-
+.pimage {
+  border: medium;
+  margin: 2rem;
+  @include phone {
+    width: 30rem;
+    margin: auto;
+  }
+  @include tablet{
+    width: 30rem;
+  }
+  @include laptop {
+    height: 65vh;
+  }
+  @include desktop {
+    height: 65vh;
+  }
 }

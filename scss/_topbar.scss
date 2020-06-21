@@ -1,152 +1,169 @@
 @import "_variables.scss";
 
 .body {
-    margin: 0rem;
+  margin: 0rem;
 }
 
 .black-bar {
-    background-color: black;
-    width: 100%;
-    height: 4rem;
-    position: fixed;
-    z-index: 9;
-    @include laptop {
-        height: 6rem;
-    }
+  background-color: black;
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  z-index: 9;
+  @include laptop {
+    height: 6rem;
+  }
+  @include desktop {
+    height: 6rem;
+  }
 }
-.logo{
-    width: 17%;
-    position: fixed;
-    left: 1.5rem;
-    top: 1rem;
-    z-index: 10;
-    @include laptop {
-        width: 12%;
-    }
-    @include tablet {
-        width: 7%;
-        top: .5rem;
-    }
-    @include desktop {
-        width: 8%;
-        top: .5rem;
-        }
+.logo {
+  width: 17%;
+  position: fixed;
+  left: 1.5rem;
+  top: 1rem;
+  z-index: 10;
+  @include laptop {
+    width: 12%;
+  }
+  @include tablet {
+    width: 7%;
+    top: 0.5rem;
+  }
+  @include desktop {
+    width: 8%;
+    top: 0.5rem;
+  }
 }
 
 .drawer-menu {
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    padding: 7.5rem 0;
-    background: color(main-color);
-    transition-property: all;
-    transition-duration: .5s;
-    transition-delay: 0s;
-    transform-origin: right center;
-    transform: perspective(31.25rem) rotateY(-90deg);
-    opacity: 0;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 7.5rem 0;
+  background: color(main-color);
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  transform-origin: right center;
+  transform: perspective(31.25rem) rotateY(-90deg);
+  opacity: 0;
 }
 
 .drawer-menu .navigation {
-    text-align: center;
+  text-align: center;
 }
 
 .drawer-menu .navigation a {
-    display: block;
-    height: 3.125rem;
-    line-height: 3.125rem;
-    font-size: 2rem;
-    color: black;
-    transition: all .8s;
-    text-decoration: none;
-    // @include tablet {
-    //     font-size: 2rem;
-    //    }
-    //    @include laptop {
-    //      font-size: 2.3rem;
-    //    }
-    //    @include desktop {
-    //      font-size: 2rem;
-    //  }
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  display: block;
+  height: 3.125rem;
+  line-height: 3.125rem;
+  font-size: 2rem;
+  color: black;
+  transition: all 0.8s;
+  text-decoration: none;
+  @include laptop {
+    height: 7rem;
+    font-size: 3rem;
+  }
+  @include desktop {
+    height: 7rem;
+    font-size: 3rem;
+  }
 }
 
 .check {
-    display: none;
+  display: none;
 }
 
 .menu-btn {
-    position: fixed;
-    display: block;
-    top: 1.2rem;
-    right: -1rem;
-    display: block;
-    width: 5rem;
-    height: 5rem;
-    z-index: 10;
-    @include laptop {
-        right: 1;
-        top: 1.8rem;
-    }
-    
+  position: fixed;
+  display: block;
+  top: 1.2rem;
+  right: -1rem;
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  z-index: 10;
+  @include laptop {
+    right: 1;
+    top: 1.8rem;
+  }
+  @include desktop {
+    right: 1;
+    top: 1.8rem;
+  }
 }
 
 .bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 2rem;
-    height: 5px;
-    background: white;
-    transition: all .5s;
-    transform-origin: left top;
-    @include laptop {
-        width: 3rem;
-        height: 8px;
-    }
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 2rem;
+  height: 5px;
+  background: white;
+  transition: all 0.5s;
+  transform-origin: left top;
+  @include laptop {
+    width: 3rem;
+    height: 7px;
+  }
+  @include desktop {
+    width: 3rem;
+    height: 6px;
+  }
 }
 
 .bar.middle {
-    top: .6rem;
-    opacity: 1;
-    @include laptop {
-        top: 1rem;
-    }
+  top: 0.6rem;
+  opacity: 1;
+  @include laptop {
+    top: 1rem;
+  }
+  @include desktop {
+    top: 1rem;
+  }
 }
 
 .bar.bottom {
-    top: 1.25rem;
-    transform-origin: left bottom;
-    @include laptop {
-        top: 2rem;
-    }
+  top: 1.25rem;
+  transform-origin: left bottom;
+  @include laptop {
+    top: 2rem;
+  }
+  @include desktop {
+    top: 2rem;
+  }
 }
 
 .check:checked ~ .drawer-menu {
-    transition-delay: .3s;
-    transform: none;
-    opacity: 1;
-    z-index: 2;
+  transition-delay: 0.3s;
+  transform: none;
+  opacity: 1;
+  z-index: 2;
 }
 
 .check:checked ~ .menu-btn .bar.top {
-    width: 3rem;
-    transform: rotate(45deg);
+  width: 3rem;
+  transform: rotate(45deg);
 }
 
 .check:checked ~ .menu-btn .bar.middle {
-    opacity: 0;
+  opacity: 0;
 }
 
 .check:checked ~ .menu-btn .bar.bottom {
-    width: 3rem;
-    top: 2rem;
-    transform: rotate(-45deg);
+  width: 3rem;
+  top: 2rem;
+  transform: rotate(-45deg);
 }
 
 ul {
-    padding-inline-start: 0rem;
+  padding-inline-start: 0rem;
 }

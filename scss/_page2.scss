@@ -2,6 +2,9 @@
 
 .pageTwo{
   z-index: -1;
+  @include desktop{
+    height: 60vh;
+  }
 }
 .pageTwoTitle {
   color: color(dark-main-color);
