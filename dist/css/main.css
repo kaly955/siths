@@ -683,6 +683,289 @@ ul {
   color: #FFD700;
 }
 
+.pageFour {
+  margin-top: -8rem;
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .pageFour {
+    margin-top: 0rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .pageFour {
+    margin-top: 0rem;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .pageFour {
+    margin-top: 0rem;
+  }
+}
+
+.events-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 2rem;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .events-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0rem;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .events-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0rem;
+  }
+}
+
+.events-title {
+  padding: 1.5rem;
+  width: 30rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: #f5dd53;
+  text-align: center;
+  background-color: black;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .events-title {
+    padding: 3rem;
+    width: 100vw;
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .events-title {
+    padding: 3rem;
+    width: 100vw;
+    font-size: 4rem;
+  }
+}
+
+.event-one, .event-two, .event-three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.event-description {
+  width: 21.8rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  color: black;
+  border: 2px solid #f5dd53;
+  margin-top: auto;
+  margin-left: 1.5rem;
+  padding: 1.75rem .5rem 1.75rem .5rem;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .event-description {
+    width: 25rem;
+    font-size: 2.5rem;
+    border: 4px solid #FFEF97;
+    margin-top: .5rem;
+    margin-left: -1rem;
+    padding: 2rem .5rem 2rem .5rem;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .event-description {
+    width: 25rem;
+    font-size: 2.5rem;
+    border: 4px solid #FFEF97;
+    margin-top: .5rem;
+    margin-left: -1rem;
+    padding: 2rem .5rem 2rem .5rem;
+  }
+}
+
+.outer {
+  position: relative;
+  top: 50%;
+  z-index: 1;
+}
+
+.signboard {
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 1.5rem;
+  color: #FFEF97;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .signboard {
+    width: 11rem;
+    height: 14rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .signboard {
+    width: 14rem;
+    height: 14rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.front {
+  z-index: 3;
+  background: #FFEF97;
+  text-align: center;
+  border: 2px solid #FFEF97;
+}
+
+.month {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: black;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .month {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .month {
+    font-size: 2.5rem;
+  }
+}
+
+.date {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: black;
+  margin-top: -1.3rem;
+  background-color: #FFEF97;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .date {
+    margin-top: -2.5rem;
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .date {
+    margin-top: -2.5rem;
+    font-size: 5rem;
+  }
+}
+
+.more-events {
+  list-style-type: none;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: start;
+  color: black;
+  background-color: #FFEF97;
+  width: 31rem;
+  padding: 1rem;
+  text-decoration: underline;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .more-events {
+    font-size: 3rem;
+    text-align: center;
+    height: 7.9rem;
+    width: 20rem;
+    background-color: #FFEF97;
+    margin-top: -1.1rem;
+    padding: 1.5rem;
+    padding-top: 5rem;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .more-events {
+    font-size: 3rem;
+    text-align: center;
+    height: 8rem;
+    width: 20rem;
+    background-color: #FFEF97;
+    margin-top: -1.3rem;
+    padding: 1.5rem;
+    padding-top: 5rem;
+    text-decoration: none;
+  }
+}
+
+.more-events:hover {
+  cursor: pointer;
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .more-events:hover {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .more-events:hover {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+}
+
 html {
   font-size: 62.5%;
   padding: 0rem;
@@ -711,7 +994,6 @@ html {
 @media (min-width: 375px) and (max-width: 812px) {
   .footer {
     margin-bottom: -2rem;
-    margin-left: -1rem;
   }
 }
 
