@@ -1,0 +1,23 @@
+{
+  "name": "siths",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaly955/siths.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaly955/siths/issues"
+  },
+  "homepage": "https://github.com/kaly955/siths#readme",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}

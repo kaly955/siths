@@ -4,33 +4,77 @@
     font-size: 5rem;
     width: 50rem;
     margin: auto;
-    
     position: relative;
-    top: -35rem;
+    top: -100rem;
     color: white;
-    outline: black;
+    @include phone{
+        font-size: 2.8rem;
+    top: -20rem;
+    width: 30rem;
+    }
+    @include tablet{
+        font-size: 5rem;
+    width: 50rem;
+    top: -80rem;
+    }
   }
 .intro{
+    display: flex;
     margin: auto;
+    flex-direction: column;
 }
 .school-img{
   z-index: -1;
-    width: 120%;
+    width: 100%;
 }
 .principal{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-content: space-evenly;
-    background-color: white;
+        background-color: white;
+        @include tablet{
+            display: flex;
+        flex-direction: row-reverse;
+        }
+    @include phone{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+   
 
 }
 .message{
     display: flex;
     flex-direction: column;
-    font-size: 2rem;
+    font-size: 3rem;
+    @include phone{
+        margin:auto;
+        width: 30rem;
+    }
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        font-size: 3rem;
+        
+    }
 }
 .welcome{
-    width: 40rem;
-    font-size: 1.2rem;
+    width: 50rem;
+    font-size: 1.5rem;
+    @include phone{
+        margin:auto;
+        width: 30rem;
+    }
+    @include tablet{
+        width: 50rem;
+        
+    }
+}
+.pimage{
+ border: medium;
+ @include phone{
+     width: 30rem;
+     margin: auto;
+ }
+ 
 }
