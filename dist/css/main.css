@@ -790,6 +790,12 @@ ul {
   padding: 2rem;
 }
 
+@media (min-width: 813px) and (max-width: 1024px) {
+  .events-container {
+    margin-left: 32rem;
+  }
+}
+
 @media (min-width: 1025px) and (max-width: 1440px) {
   .events-container {
     -webkit-box-orient: horizontal;
@@ -798,6 +804,8 @@ ul {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding: 0rem;
   }
 }
@@ -870,12 +878,12 @@ ul {
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   .event-description {
-    width: 25rem;
-    font-size: 2.5rem;
+    width: 17rem;
+    font-size: 2rem;
     border: 4px solid #FFEF97;
     margin-top: .5rem;
-    margin-left: -1rem;
-    padding: 2rem .5rem 2rem .5rem;
+    margin-left: -1.5rem;
+    padding: .5rem;
   }
 }
 
@@ -905,7 +913,7 @@ ul {
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   .signboard {
-    width: 11rem;
+    width: 10rem;
     height: 14rem;
     margin-right: 1rem;
     margin-bottom: 2rem;
@@ -989,10 +997,10 @@ ul {
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   .more-events {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     height: 7.9rem;
-    width: 20rem;
+    width: 7.5rem;
     background-color: #FFEF97;
     margin-top: -1.1rem;
     padding: 1.5rem;
