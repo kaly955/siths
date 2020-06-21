@@ -31,17 +31,15 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-        background-color: white;
-        @include tablet{
-            display: flex;
+    background-color: white;
+    @include tablet{
+        display: flex;
         flex-direction: row-reverse;
-        }
+    }
     @include phone{
         display: flex;
         flex-direction: column-reverse;
     }
-   
-
 }
 .message{
     display: flex;
@@ -50,12 +48,24 @@
     @include phone{
         margin:auto;
         width: 30rem;
+        margin-bottom: 2rem;
+        margin-top: 0rem;
     }
     @include tablet{
         display: flex;
         flex-direction: column;
         font-size: 3rem;
-        
+    }
+}
+
+.message-title {
+    margin: 1rem;
+    @include tablet {
+        font-size: 4rem;
+    }
+    @include laptop {
+        margin-bottom: 3rem;
+        font-size: 5rem;
     }
 }
 .welcome{
@@ -67,14 +77,21 @@
     }
     @include tablet{
         width: 50rem;
-        
+        font-size: 2rem;
+    }
+    @include laptop {
+        font-size: 3rem;
     }
 }
 .pimage{
- border: medium;
- @include phone{
-     width: 30rem;
-     margin: auto;
- }
- 
+    border: medium;
+    margin: 2rem;
+    @include phone{
+        width: 30rem;
+        margin: auto;
+    }
+    @include laptop {
+        height: 70vh;
+    }
+
 }

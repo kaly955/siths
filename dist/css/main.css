@@ -273,6 +273,8 @@ ul {
   .message {
     margin: auto;
     width: 30rem;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
   }
 }
 
@@ -286,6 +288,23 @@ ul {
         -ms-flex-direction: column;
             flex-direction: column;
     font-size: 3rem;
+  }
+}
+
+.message-title {
+  margin: 1rem;
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .message-title {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .message-title {
+    margin-bottom: 3rem;
+    font-size: 5rem;
   }
 }
 
@@ -304,17 +323,31 @@ ul {
 @media (min-width: 813px) and (max-width: 1024px) {
   .welcome {
     width: 50rem;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .welcome {
+    font-size: 3rem;
   }
 }
 
 .pimage {
   border: medium;
+  margin: 2rem;
 }
 
 @media (min-width: 375px) and (max-width: 812px) {
   .pimage {
     width: 30rem;
     margin: auto;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .pimage {
+    height: 70vh;
   }
 }
 
@@ -542,7 +575,7 @@ ul {
           clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0% 100%);
   background-color: #FFEF97;
   position: relative;
-  top: -65%;
+  top: -50%;
   width: 25rem;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 400;
@@ -554,15 +587,16 @@ ul {
 @media (min-width: 813px) and (max-width: 1024px) {
   .news-box {
     width: 15rem;
+    top: -70%;
   }
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   .news-box {
-    top: -40%;
+    top: -50%;
     width: 35rem;
     font-size: 2.9rem;
-    height: 7.5rem;
+    height: 9rem;
   }
 }
 
@@ -576,8 +610,10 @@ ul {
 }
 
 .news-label {
-  top: 3.25rem;
+  top: 3rem;
   position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
 }
 
 @media (min-width: 813px) and (max-width: 1024px) {
@@ -587,9 +623,17 @@ ul {
   }
 }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .news-label {
+    top: 4rem;
+    font-size: 3rem;
+  }
+}
+
 @media (min-width: 1441px) and (max-width: 2560px) {
   .news-label {
     top: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -607,7 +651,7 @@ ul {
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   .pageThree {
-    margin-top: 0rem;
+    height: 100vh;
   }
 }
 
@@ -628,13 +672,14 @@ ul {
 @media (min-width: 813px) and (max-width: 1024px) {
   .books-image {
     height: 90vh;
-    width: 100vh;
+    width: 120vh;
   }
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   .books-image {
-    margin-top: 0rem;
+    height: 90vh;
+    width: 130vh;
   }
 }
 
@@ -660,13 +705,16 @@ ul {
     height: 90vh;
     width: 50vh;
     margin-top: -90vh;
-    margin-left: 17vh;
+    margin-left: 7vh;
   }
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   .shadow-box {
-    margin-top: 0rem;
+    height: 90vh;
+    width: 50vh;
+    margin-top: -90vh;
+    margin-left: 17vh;
   }
 }
 
@@ -694,7 +742,8 @@ ul {
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   .shadow-title {
-    margin-top: 0rem;
+    font-size: 7rem;
+    width: 50vh;
   }
 }
 
@@ -716,6 +765,13 @@ ul {
 @media (min-width: 813px) and (max-width: 1024px) {
   .shadow-content {
     font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .shadow-content {
+    font-size: 3.5rem;
+    top: 28vh;
   }
 }
 
@@ -744,7 +800,7 @@ ul {
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   .read-story {
-    margin-top: 0rem;
+    top: 75vh;
   }
 }
 

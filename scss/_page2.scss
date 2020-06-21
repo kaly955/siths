@@ -136,7 +136,7 @@
   clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0% 100%);
   background-color: #FFEF97;
   position: relative;
-  top: -65%;
+  top: -50%;
   width: 25rem;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 400;
@@ -145,12 +145,13 @@
   height: 6rem;
   @include tablet {
     width: 15rem;
+    top: -70%;
   }
   @include laptop {
-    top: -40%;
+    top: -50%;
     width: 35rem;
     font-size: 2.9rem;
-    height: 7.5rem;
+    height: 9rem;
   }
   @include desktop {
     top: -35%;
@@ -161,13 +162,20 @@
 }
 
 .news-label {
-  top: 3.25rem;
+  top: 3rem;
   position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
   @include tablet {
     top: 3.2rem;
     font-size: 1.5rem;
   }
+  @include laptop{
+    top: 4rem;
+    font-size: 3rem;
+  }
   @include desktop {
     top: 4rem;
+    font-size: 3rem;
   }
 }

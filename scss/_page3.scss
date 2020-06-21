@@ -8,10 +8,10 @@
     height: 100vh;
   }
   @include laptop {
-    margin-top: 0rem;
+    height: 100vh;
   }
   @include desktop {
-    margin-top: 50rem;;
+    margin-top: 50rem;
     height: 100vh;
   }
 }
@@ -23,14 +23,16 @@
   position: relative;
   @include tablet {
     height: 90vh;
-    width: 100vh;
+    width: 120vh;
   }
   @include laptop {
-    margin-top: 0rem;
+    height: 90vh;
+    width: 130vh;
   }
   @include desktop {
     height: 90vh;
-    width: 190vh;  }
+    width: 190vh;  
+  }
 }
 
 .shadow-box {
@@ -45,10 +47,13 @@
     height: 90vh;
     width: 50vh;
     margin-top: -90vh;
-    margin-left: 17vh;
+    margin-left: 7vh;
   }
   @include laptop {
-    margin-top: 0rem;
+    height: 90vh;
+    width: 50vh;
+    margin-top: -90vh;
+    margin-left: 17vh;
   }
   @include desktop {
     top: -16vh;
@@ -64,10 +69,11 @@
   color: white;
   margin-top: 6rem;
   @include tablet {
-  width: 50vh;
+    width: 50vh;
   }
   @include laptop {
-    margin-top: 0rem;
+    font-size: 7rem;
+    width: 50vh;
   }
   @include desktop {
     margin-top: 5rem;
@@ -85,6 +91,8 @@
     font-size: 2.5rem;
   }
   @include laptop {
+    font-size: 3.5rem;
+    top: 28vh;
   }
   @include desktop {
     font-size: 3rem;
@@ -101,10 +109,10 @@
   padding: 1rem;
   top: 62vh;
   @include tablet {
-  top: 70vh;
+    top: 70vh;
   }
   @include laptop {
-    margin-top: 0rem;
+    top: 75vh;
   }
   @include desktop {
     top: 78vh;
