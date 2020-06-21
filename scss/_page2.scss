@@ -123,14 +123,6 @@
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
-.individual-news-image:hover,
-.individual-news-image:focus,
-.individual-news-image:active {
-  animation-name: hvr-push;
-  animation-duration: 0.28s;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-}
 
 .news-box {
   clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0% 100%);
