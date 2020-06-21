@@ -557,19 +557,6 @@ ul {
           animation-iteration-count: 1;
 }
 
-.individual-news-image:hover,
-.individual-news-image:focus,
-.individual-news-image:active {
-  -webkit-animation-name: hvr-push;
-          animation-name: hvr-push;
-  -webkit-animation-duration: 0.28s;
-          animation-duration: 0.28s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
 .news-box {
   -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0% 100%);
           clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0% 100%);
