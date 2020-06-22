@@ -3,21 +3,27 @@
 .title {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 500;
-  font-size: 5rem;
-  width: 50rem;
+  font-size: 7rem;
+  width: 70rem;
   margin: auto;
   position: relative;
   top: -100rem;
   color: white;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+    1px 1px 0 #000;  
+
   @include phone {
     font-size: 2.8rem;
-    top: -39rem;
+    top: -15rem;
     width: 30rem;
   }
   @include tablet {
-    font-size: 5rem;
-    width: 50rem;
-    top: -80rem;
+    font-size: 6rem;
+    width: 70rem;
+    top: -35rem
   }
   @include laptop {
     top: -50rem;
@@ -38,9 +44,10 @@
 }
 .school-img {
   z-index: -1;
-  width: 100%;
-  @include desktop {
-    height: 100vh;
+  height: 100vh;
+  @include phone {
+    height: auto;
+    width: 100%;
   }
 }
 .principal {
@@ -51,10 +58,15 @@
   @include tablet {
     display: flex;
     flex-direction: row-reverse;
+    margin-top: -8rem;
+  }
+  @include laptop {
+    margin-top: -16rem;
   }
   @include phone {
     display: flex;
     flex-direction: column-reverse;
+    margin-top: -7rem;
   }
 }
 .message {

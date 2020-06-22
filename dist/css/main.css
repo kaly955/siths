@@ -38,7 +38,7 @@
 
 @media (min-width: 813px) and (max-width: 1024px) {
   .logo {
-    width: 7%;
+    width: 11%;
     top: 0.5rem;
   }
 }
@@ -162,7 +162,7 @@
 }
 
 .bar.middle {
-  top: 0.6rem;
+  top: 0.7rem;
   opacity: 1;
 }
 
@@ -179,7 +179,7 @@
 }
 
 .bar.bottom {
-  top: 1.25rem;
+  top: 1.4rem;
   -webkit-transform-origin: left bottom;
           transform-origin: left bottom;
 }
@@ -230,27 +230,28 @@ ul {
 .title {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 500;
-  font-size: 5rem;
-  width: 50rem;
+  font-size: 7rem;
+  width: 70rem;
   margin: auto;
   position: relative;
   top: -100rem;
   color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 @media (min-width: 375px) and (max-width: 812px) {
   .title {
     font-size: 2.8rem;
-    top: -39rem;
+    top: -15rem;
     width: 30rem;
   }
 }
 
 @media (min-width: 813px) and (max-width: 1024px) {
   .title {
-    font-size: 5rem;
-    width: 50rem;
-    top: -80rem;
+    font-size: 6rem;
+    width: 70rem;
+    top: -35rem;
   }
 }
 
@@ -287,12 +288,13 @@ ul {
 
 .school-img {
   z-index: -1;
-  width: 100%;
+  height: 100vh;
 }
 
-@media (min-width: 1441px) and (max-width: 2560px) {
+@media (min-width: 375px) and (max-width: 812px) {
   .school-img {
-    height: 100vh;
+    height: auto;
+    width: 100%;
   }
 }
 
@@ -319,6 +321,13 @@ ul {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    margin-top: -8rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .principal {
+    margin-top: -16rem;
   }
 }
 
@@ -331,6 +340,7 @@ ul {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    margin-top: -7rem;
   }
 }
 
@@ -549,7 +559,8 @@ ul {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     margin: 0 auto;
-    padding-top: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     width: 120rem;
   }
 }
@@ -898,7 +909,7 @@ ul {
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   .read-story {
-    top: 75vh;
+    top: 81vh;
   }
 }
 
@@ -909,7 +920,7 @@ ul {
 }
 
 .pageFour {
-  margin-top: -8rem;
+  margin-top: -2rem;
 }
 
 @media (min-width: 813px) and (max-width: 1024px) {
@@ -942,12 +953,6 @@ ul {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 2rem;
-}
-
-@media (min-width: 813px) and (max-width: 1024px) {
-  .events-container {
-    margin-left: 17.5rem;
-  }
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
@@ -989,7 +994,7 @@ ul {
 
 @media (min-width: 813px) and (max-width: 1024px) {
   .events-title {
-    width: 60rem;
+    width: 94rem;
   }
 }
 
@@ -1040,7 +1045,7 @@ ul {
 
 @media (min-width: 813px) and (max-width: 1024px) {
   .event-description {
-    width: 51.7rem;
+    width: 85.7rem;
     font-size: 2rem;
   }
 }
@@ -1166,7 +1171,7 @@ ul {
 
 @media (min-width: 813px) and (max-width: 1024px) {
   .more-events {
-    width: 61rem;
+    width: 95rem;
   }
 }
 

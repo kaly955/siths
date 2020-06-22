@@ -27,7 +27,7 @@
     width: 12%;
   }
   @include tablet {
-    width: 7%;
+    width: 11%;
     top: 0.5rem;
   }
   @include desktop {
@@ -121,7 +121,7 @@
 }
 
 .bar.middle {
-  top: 0.6rem;
+  top: 0.7rem;
   opacity: 1;
   @include laptop {
     top: 1rem;
@@ -132,7 +132,7 @@
 }
 
 .bar.bottom {
-  top: 1.25rem;
+  top: 1.4rem;
   transform-origin: left bottom;
   @include laptop {
     top: 2rem;
